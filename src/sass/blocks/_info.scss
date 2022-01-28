@@ -1,0 +1,44 @@
+.info {
+    max-height: 475px;
+    background:  #F6F6F6;
+    padding: 73px 0 85px 0;
+    &__header {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        text-align: center;
+    }
+    &__icon {
+        &__header {
+            margin-top: 35px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 29px;
+        }
+        &__descr {
+            width: 270px ;
+            margin-top: 20px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            a {
+                font-size: 14px;
+                line-height: 18px;
+                text-decoration: none;
+                color: #FF0000;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+    }
+
+}
