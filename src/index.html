@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./fonts/MuseoSans/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
     <link rel="stylesheet" href="./css/blocks/style.min.css">
     <title>Pulse</title>
 </head>
 
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -51,19 +52,19 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="info">
         <div class="container">
             <div class="info__header">НАШИ ПРЕИМУЩЕСТВА</div>
             <div class="info__icons">
-                <div class="info_icon">
+                <div class="info__icon">
                     <img src="./icon/cup.svg" alt="cup">
                     <div class="info__icon__header">Делимся опытом</div>
                     <div class="info__icon__descr">Наши сотрудники всегда готовы поделиться своим опытом,  так как сами
                         бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                     </div>
                 </div>
-                <div class="info_icon">
+                <div class="info__icon">
                     <img src="./icon/heart.svg" alt="heart">
                     <div class="info__icon__header">
                         Заботимся о здоровье
@@ -73,7 +74,7 @@
                         Вам и Вашим близким!
                     </div>
                 </div>
-                <div class="info_icon">
+                <div class="info__icon">
                     <img src="./icon/shoe.svg" alt="shoe">
                     <div class="info__icon__header">
                         Учим бегать
@@ -98,6 +99,39 @@
             </form>
         </div>
     </section>
+    <section class="carusel">
+        <div class="container">
+            <div class="carusel__inner">
+                <div>
+                    <img src="./img/slide_1.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/slide_2.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/slide_3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title">
+                Каталог пульсометров
+            </h2>
+            <ul class="catalog__tabs">
+                <li class="catalog_tab">Для фитнеса</li>
+                <li class="catalog_tab">для бега</li>
+                <li class="catalog_tab">для триатлона</li>
+            </ul>
+            <div class="catalog__content"></div>
+            <div class="catalog__content"></div>
+            <div class="catalog__content"></div>
+        </div>
+    </section>
 </body>
-
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/script.js"></script>
 </html>

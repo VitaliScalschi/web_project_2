@@ -4,8 +4,6 @@
 *{
     font-family: 'Museo Sans Cyrl', sans-serif;
     box-sizing: 0;
-    padding: 0;
-    margin: 0;
 }
 
 .container{
@@ -19,6 +17,10 @@
 @import "../blocks/info";
 @import "../blocks/consultation";
 @import "../blocks/forms";
+@import "../blocks/media";
+@import "../blocks/carusel";
+@import "./title";
+@import "./catalog";
 
 
 
