@@ -44,7 +44,7 @@ $(document).ready(function(){
         });
     });
 
-
+/// validarea datelor introduse
     function validateForms(form){
         $(form).validate({
             rules: {
@@ -79,7 +79,47 @@ $(document).ready(function(){
     validateForms('#consultation form');
     validateForms('#order form');
 
-
-
+    //// Masca la numarul de telefon
     $('input[name=phone]').mask("(+373) 999-9999");
+
+
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        if (!$(this).valid()){
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation', '#order').fadeOut();
+            $('.overlay', '#thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+
+    ///Scroll page up
+
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 1600) {
+            $('.page__up').fadeIn();
+        } else {
+            $('.page__up').fadeOut();
+        }
+    });
+    
+
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr ("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
 });

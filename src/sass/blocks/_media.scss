@@ -1,116 +1,117 @@
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
 
 }
-@media (max-width: 991px){
-    .container {
-        max-width: 800px;
-    }
-    .consultation{
-        &__title{
-            font-size: 33px;
+
+@media (max-width: 991px) {
+    .promo {
+        .header {
+            display: flex;
+            justify-content: space-around;
         }
-        &__descr{
-            font-size: 17px;
-        }
-    }
-}
-@media (max-width: 767px){
-    .container {
-        max-width: 740px;
-    }
-    .promo{
-        &__header{
-            font-size: 37px;
+        &__header {
+            font-size: 35px;
             line-height: 23px;
         }
-        &__subheader{
-            font-size: 19px;
-        }
-        &__link{
-            font-size: 13px;
+        &__subheader {
+            font-size: 20px;
         }
     }
-    .info{
-        &__header{
-            font-size: 25px;
+    .consultation {
+        &__title {
+            font-size: 30px;
         }
-        &__icon__header{
-            margin-top: 20px;
-            font-size: 17px;
-        }
-        &__icon__descr{
-            font-size: 13px;
-            width: 250px;
-        }
-    }
-    .consultation{
-        &__title{
-            font-size: 25px;
-        }
-        &__descr{
-            font-size: 14px;
-        }
-    }
-}
-@media (max-width: 575px){
-    .promo{
-        min-height: 600px;
-        .header{
-            justify-content: space-around;
-            &__logo{
-                width: 220px;
-            }
-            &__official{
-                display: none;
-            }
-        }
-        &__header{
-            margin: 0 auto;
-        }
-        &__subheader{
-            margin: 0 auto;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-        &__icons{
-            margin: 50px auto 0;
-        }
-        .button_main{
-            margin: 50px auto 0;
-        }
-        &__link{
-            display: inline-block;
-            margin: 10px auto 0;
-        }
-    }
-    .info{
-        padding: 50px 0 65px 0;
-        &__icons{
-            flex-direction: column;
-        }
-        &__icon{
-            margin-bottom: 20px;
-        }
-        &__icon__header{
+        &__descr {
             font-size: 18px;
         }
-        &__icon__descr{
-            margin: 0 auto;
-            font-size: 15px;
+    }
+    .carusel {
+        &__inner, .slick-initialized, .slick-slider {
+            width: 700px;
+        }
+        .slick-slide, .slick-current, .slick-active {
+            img {
+                width: 100%;
+            }
         }
     }
-    .consultation{
-        &__title{
-            font-size: 23px;
-            text-align: center;
-        }
-        &__descr{
-            text-align: center;
-        }
-        .feed-form{
-            margin: 20px auto 0;
-        }
-    }
-}
+        
 
+}
     
+@media (max-width: 767px) {
+    .promo {
+        min-height: 600px;
+        padding-bottom: 60px;
+        .header {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__header {
+            font-size: 32px;
+            line-height: 10px;
+        }
+        &__subheader {
+            font-size: 17px;
+        }
+        &__wraper {
+            margin-right: 30px;
+        }
+    }
+    .info {
+        padding: 50px 0 70px 0;
+        &__header {
+            font-size: 27px;
+        }
+    }
+    .consultation {
+        padding: 70px 0 60px 0;
+        min-height: 600px;
+        &__title {
+            font-size: 27px;
+        }
+    }
+    .carusel {
+        &__inner, .slick-initialized, .slick-slider {
+            width: 600px;
+        }
+        .slick-slide, .slick-current, .slick-active {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        .catalog-item {
+            width: 240px;
+            &__new-price {
+                font-size: 18px;
+            }
+            .button__catalog-item {
+                width: 100px;
+            }
+        }
+    }
+    .forum {
+        .title {
+            font-size: 25px;
+        }
+        &__item {
+            img {
+                max-width: 140px;
+                max-height: 140px;
+            }
+            &_descr {
+                .post {
+                    max-width: 490px;
+                }
+            }
+        }
+    }
+
+
+
+}
+@media (max-width: 575px) {
+
+}
+   
