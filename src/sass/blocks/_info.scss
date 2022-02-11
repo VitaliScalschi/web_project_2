@@ -37,6 +37,16 @@
                 }
             }
         }
+        .heart_animation {
+            animation: heartbeat 3s ease infinite;
+            // animation-name: heartbeat;
+            // animation-duration: 3s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
 
 
     }

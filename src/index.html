@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./fonts/MuseoSans/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/blocks/style.min.css">
     <title>Pulse</title>
 </head>
@@ -17,7 +18,7 @@
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
-                    <img src="./icon/running-man-2-64.svg" alt="logo">
+                    <img src="./icon/runningman.svg" alt="logo">
                 </a>
                 <div class="header__official">
                     Официальный представитель
@@ -33,15 +34,15 @@
                 <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
                 <div class="promo__icons">
                     <div class="promo__icon">
-                        <img src="./icon/019_timer_time_stopwatch_2-64.svg" alt="stopwatch">
+                        <img src="./icon/time_stopwatch.svg" alt="stopwatch">
                         Время подбора: 10 минут
                     </div>
                     <div class="promo__icon">
-                        <img src="./icon/app 08 hand cart 64.svg" alt="hand_cart">
+                        <img src="./icon/hand_cart.svg" alt="hand_cart">
                         Бесплатная доставка
                     </div>
                     <div class="promo__icon">
-                        <img src="./icon/messages 64.svg" alt="messages">
+                        <img src="./icon/messages.svg" alt="messages">
                         Ответим на все вопросы
                     </div>
                 </div>
@@ -53,19 +54,19 @@
             </div>
         </div>
     </section>
-    <section class="info">
+    <div class="info">
         <div class="container">
             <div class="info__header">НАШИ ПРЕИМУЩЕСТВА</div>
             <div class="info__icons">
                 <div class="info__icon">
-                    <img src="./icon/cup.svg" alt="cup">
+                    <img src="./icon/cup.svg" alt="cup" >
                     <div class="info__icon__header">Делимся опытом</div>
                     <div class="info__icon__descr">Наши сотрудники всегда готовы поделиться своим опытом,  так как сами
                         бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                     </div>
                 </div>
                 <div class="info__icon">
-                    <img src="./icon/heart.svg" alt="heart">
+                    <img src="./icon/heart.svg" alt="heart" class="heart_animation">
                     <div class="info__icon__header">
                         Заботимся о здоровье
                     </div>
@@ -86,8 +87,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="consultation">
+    </div>
+    <div class="consultation">
         <div class="container">
             <div class="consultation__title">Получите бесплатную консультацию <br> по подбору пульсометра </div>
             <div class="consultation__descr">Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
@@ -99,8 +100,8 @@
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
-    </section>
-    <section class="carusel">
+    </div>
+    <div class="carusel">
         <div class="container">
             <div class="carusel__inner">
                 <div>
@@ -114,7 +115,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <section class="catalog">
         <div class="container">
             <h2 class="title">
@@ -132,7 +133,7 @@
                 </li>
             </ul>
             <div class="catalog__content catalog__content_activ">
-                <div class="catalog-item">
+                <div class="catalog-item animate__fadeInLeftBig wow" data-wow-duration="2s" data-wow-delay="800ms">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_activ">
                             <img src="./img/photo.png" alt="watch" class="catalog-item__img">
@@ -159,7 +160,7 @@
                         <button class="button button__catalog-item">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="800ms">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_activ">
                             <img src="./img/photo.png" alt="watch" class="catalog-item__img">
@@ -185,7 +186,7 @@
                         <button class="button button__catalog-item">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__fadeInRightBig wow" data-wow-duration="2s" data-wow-delay="800ms">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_activ">
                             <img src="./img/photo.png" alt="watch" class="catalog-item__img">
@@ -211,7 +212,7 @@
                         <button class="button button__catalog-item">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__fadeInLeftBig wow" data-wow-duration="2s" data-wow-delay="800ms">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_activ">
                             <img src="./img/photo.png" alt="watch" class="catalog-item__img">
@@ -237,7 +238,7 @@
                         <button class="button button__catalog-item">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item anon="2s" data-wow-delay="800ms">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_activ">
                             <img src="./img/photo.png" alt="watch" class="catalog-item__img">
@@ -263,7 +264,7 @@
                         <button class="button button__catalog-item">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__fadeInRightBig wow" data-wow-duration="2s" data-wow-delay="800ms">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_activ">
                             <img src="./img/photo.png" alt="watch" class="catalog-item__img">
@@ -378,7 +379,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="forum__items">
-                <div class="forum__item">
+                <div class="forum__item animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.3s">
                     <img src="./img/photo_1.png" alt="" class="forum__item_img">
                     <div class="forum__item_descr">
                         <div class="name">Ирина Иванченко </div>
@@ -391,7 +392,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="forum__item">
+                <div class="forum__item animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.3s">
                     <img src="./img/photo_2.png" alt="" class="forum__item_img">
                     <div class="forum__item_descr">
                         <div class="name">Иван Сёмочкин</div>
@@ -404,7 +405,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="forum__item">
+                <div class="forum__item animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.3s">
                     <img src="./img/photo_3.png" alt="" class="forum__item_img">
                     <div class="forum__item_descr">
                         <div class="name">Юлия Дашкина</div>
@@ -425,7 +426,7 @@
     <footer class="footer">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430481195992!2d37.644807315931104!3d55.76839498055754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2s!4v1643705169911!5m2!1sru!2s"
-            width="100%" height="630px" style="border:0;" allowfullscreen="" loading="lazy">
+            allowfullscreen="" loading="lazy" class="footer__harta">
         </iframe>
         <div class="footer__info">
             <address class="footer__info_addres">Москва, Мясницкий проезд, д.3с1</address>
@@ -439,7 +440,7 @@
     </footer>
 
     <div class="overlay">
-        <div class="modal" id="consultation">
+        <div class="modal" id="consultation" >
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
@@ -450,7 +451,7 @@
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
-        <div class="modal" id="order">
+        <div class="modal " id="order">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">ПВаш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
@@ -461,7 +462,7 @@
                 <button class="button button_submit">Купить</button>
             </form>
         </div>
-        <div class="modal modal__mini" id="thanks">
+        <div class="modal modal__mini " id="thanks">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
@@ -474,11 +475,12 @@
     
 
 </body>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="./js/slick.min.js"></script>
 <script src="./js/jquery.validate.min.js"></script>
 <script src="./js/jquery.maskedinput.min.js"></script>
+<script src="./js/wow.min.js" ></script>
 <script src="./js/script.js"></script>
 
 </html>
